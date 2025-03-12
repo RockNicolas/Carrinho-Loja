@@ -1,10 +1,20 @@
+import { createBrowserRouter } from 'react-router-dom'
+import { Home } from './pages/Home/home'
+import { Cart } from './pages/Cart/cart'
+import { Layout } from './components/Layout/Layout'
 
-function App() {
-    return(
-      <h1 className='text-3x1 font-bold underline'>
-        teste
-      </h1>
-    )
-}
-
-export default App;
+export const router = createBrowserRouter([
+  {
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />
+      },
+      {
+        path: "/cart",
+        element: <Cart />
+      }
+    ]
+  }
+])
