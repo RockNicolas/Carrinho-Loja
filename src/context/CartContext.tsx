@@ -1,5 +1,5 @@
 import {  createContext , ReactNode, useState } from 'react';
-import { ProductProps } from '../pages/home/home'
+import { ProductProps } from '../pages/Home/home'
 
 interface CartContextData {
     cart: CartProps[];
