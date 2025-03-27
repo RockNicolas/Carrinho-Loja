@@ -1,7 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
 import { Home } from './pages/home/home'
 import { Cart } from './pages/cart/cart'
-
 import { Layout } from './components/layout/Layout'
 
 
